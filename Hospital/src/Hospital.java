@@ -2,9 +2,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-public class Hospital  {
-
-
+public class Hospital {
 
 
     List<Patients> depXray = new ArrayList<Patients>();
@@ -12,11 +10,17 @@ public class Hospital  {
     List<Patients> depCheckUp = new ArrayList<Patients>();
 
 
-
-
-
-    public void addPatientToXray(Patients patient){
+    public void addPatientToXray(Patients patient) {
         depXray.add(patient);
+    }
+
+
+    public void addPatientToOperation(Patients patient) {
+        depOperation.add(patient);
+    }
+
+    public void addPatientToCheckUp(Patients patient) {
+        depCheckUp.add(patient);
     }
 
     public List<Patients> getCheckUpList() {
@@ -24,11 +28,4 @@ public class Hospital  {
 
     }
 
-    public void addPatientToOperation(Patients patient){
-        depOperation.add(patient);
-    }
-
-    public void addPatientToCheckUp(Patients patient){
-        depCheckUp.add(patient);
-    }
 }
